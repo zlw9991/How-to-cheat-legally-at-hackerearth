@@ -25,9 +25,9 @@ In this code example , the first input '5' is just a key item to be found in the
 
 ![Optional Text](/pictures/3.PNG)
 
-For hidden test cases, what can I find information on the line of input it uses to produce the linked list?
+For hidden test cases, what information can I infer from the line of input it uses to produce the linked list?
 
-This is a list of values which can be inferred (roughly) from the time (sec) it takes to output after manipulation:
+This is a list of values which can be inferred (roughly) from the time (sec) it takes to output after manipulation of the output function:
 - number of inputs 
 - number of items which are of the same value as the key item
 - number of items greater than the key item
@@ -46,7 +46,7 @@ void printList(ListNode *head){
         head = head->next;
         cntr++;
     }
-	usleep((cntr*1000*100)); // usleep uses microseconds, this turns it to 0.1 seconds
+	usleep((cntr*1000*100)); // usleep uses microseconds, this turns it to 0.1 seconds, usleep() is used there to manipulate the output
     printf("\n");
 }
 ```
